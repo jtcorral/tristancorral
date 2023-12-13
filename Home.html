@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+<html>
+<head>
+    <title> Home Page </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="finals.css">
+    <script src="java.js"></script>
+</head>
+<body onload="initClock()">
+    <header>
+        <a href="Home.html" style="display:flex;">
+        <img src="coa.png">
+        <img src="fun.png">
+        </a>
+        
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="sidenav">
+            <button class="dropdown-btn"> About Philippines 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="home.html#history"> History </a>
+                <a href="home.html#geography"> Geography and Environment </a>
+                <a href="home.html#demographics"> Demographics </a>
+                <a href="home.html#culture"> Culture </a>
+            </div>
+            <button class="dropdown-btn"> Tourist Attractions 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="Home.html#luzon"> Luzon </a>
+                <a href="Home.html#visayas"> Visayas </a>
+                <a href="Home.html#mindanao"> Mindanao </a>
+            </div>
+            <a href="vidgal.html"><i class="fa fa-fw fa-youtube-play"></i> Video Gallery </a>
+            <a href="Login.html"><i class="fa fa-fw fa-user"></i> Log-In </a>
+            <a href="Contact Us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        </div>
+        
+        <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+          });
+        }
+        </script>
+        
+        <section id="history">
+            <div class="section-inner">
+                <h1> History of the Philippines </h1>
+                <br>
+                <table cellspacing=10px>
+                    <tr>
+                        <td>
+                            <img src="histo.jpg" alt="History">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3 style="text-indent:20px;">History</h3>
+                            <blockquote>
+                            <ul>
+                                <li>1521 - The Philippines are discovered by Europe</li>
+                                <li>1571 - Regular trade was established between the Spaniards and the Chinese</li>
+                                <li>1762 - The early Spanish colonization period</li>
+                                <li>1762 - The later period of Spanish rule</li>
+                                <li>1756 - 1763 The 1898 Seven Years’ War</li>
+                                <li>1820 - Social and economic changes as the Port 72 of Manila opened to foreign commerce</li>
+                                <li>1868 - Spanish Revolution when Queen Isabella II deposed</li>
+                                <li>1898 - Spanish-American War</li>
+                                <li>1898 - Declaration of Philippine independence from Spaniards</li>
+                                <li>1899 - 1935 First phase of American rule</li>
+                                <li>1934 - First constitution. 1941 - The Japanese occupied the Philippines</li>
+                                <li>1946 - The Philippines became a republic</li>
+                                </ul>
+                            </blockquote>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <section id="geography">
+            <div class="section-inner">
+                <h1> Geography & Environment </h1>
+                <center>
+                <img src="map.jpg" alt="Philippine Map">
+                </center>
+                <blockquote>
+                <p> The Philippines consists of more than 7,000 islands (7,640 to be precise) that form an archipelago. The topography of the 
+                Philippines is mountainous and has narrow to large coastal lowlands, depending on each island. The Philippines has divided into 
+                three geographic areas mainly Luzon, Visayas, and Mindanao. The environment/climate of the Philippines is tropical marine which 
+                has a rainy and dry seasonal climate. </p>
+                </blockquote>
+            </div>
+        </section>
+        
+        <section id="demographics">
+            <div class="section-inner">
+                <h1> Demographics </h1>
+            <center><img src="demo.jpg" alt="demographics"></center>
+                <p> The total population in the Philippines is forecast to amount to 117.30m inhabitants in 2023. The number of households in the Philippines is forecast to amount to 22.69m in 2023. The 65-74 years old population in the Philippines is forecast to amount to 6.59m in 2023. </p>
+            </div>
+        </section>
+        
+        <section id="culture">
+            <div class="section-inner">
+                <h1> Culture </h1>
+                <br>
+                
+                <center>
+                <img src="values.jpg" alt="Filipino Values">
+                </center>
+                <h3> Filipino Values </h3>
+                <blockquote>
+                <p> Filipinos are known to uphold many significant values that revolve around and are rooted in relationships and societal obligations. 
+                At early ages, Filipinos are taught to be respectful toward elders; such as saying <i>“po”</i> and <i>“opo”</i> and the <i>“pagmamano”</i> 
+                which is raising the back of the hand of their elders to their foreheads. Filipinos are also known to be loving, incorporating a love 
+                for God, family,and one’s neighbor (the practice of hospitality to guests or strangers). </p>
+                </blockquote>
+                
+                <center>
+                <img src="food.jpg" alt="Filipino Food">
+                </center>
+                <h3> Filipino Food </h3>
+                <blockquote>
+                <p> Filipino cuisine is a fusion of indigenous, Spanish, and Asian influences. It is characterized by its use of
+                    fresh ingredients, bold flavors, and a variety of cooking techniques. Some of the most popular Filipino
+                    dishes include adobo, kare-kare, sinigang, and lechon. </p>
+                </blockquote>
+                
+                <center>
+                <img src="festival.jpg" alt="Filipino Tradition">
+                </center>
+                <h3> Filipino Festivals and Celebrations </h3>
+                <blockquote>
+                <p> Filipinos love to celebrate, and they have a wide variety of festivals and celebrations throughout the
+                    . Some of the most popular festivals include the Sinulog Festival in Cebu City, the Dinagyang Festival
+                    in Iloilo City, and the Ati-Atihan Festival in Kalibo. </p>
+                </blockquote>
+
+                <center>
+                <img src="dance.jpg" alt="Filipino Music and Dance">
+                </center>
+                <h3> Filipino Music and Dance </h3>
+                <blockquote>
+                <p> Music and dance are an integral part of Filipino culture. Filipinos love to sing and dance, and they have a
+                    rich tradition of folk music and dance. Some of the most popular Filipino dances include the Tinikling,
+                    the Singkil, and the Cariñosa. </p>
+                </blockquote>
+            </div>
+        </section>
+        
+        <section id="luzon">
+            <div class="section-inner">
+                <h1> Tour-list Spots of Luzon </h1> 
+                <table class="tourist-spots">
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Intramuros </h3>
+                            <figure>
+                            <img src="intra.jpg" alt="Intramuros" style="max-width:100%; height:auto;">
+                            <figcaption><i> Manila's Historical Monument, the Walled city, the fortress of the Spanish Era. Immerse
+                            youself to the prideful history of the Philippines. </i></figcaption>
+                            </figure>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Mayon Volcano </h3>
+                            <figure>
+                            <img src="mayon.jpg" alt="Vigan City" style="max-width:100%; height:auto;">
+                            <figcaption><i> A perfectly conical volcano located in Albay province, Mayon Volcano is an active
+                            volcano and one of the most popular tourist destinations in Luzon. </i></figcaption>
+                            </figure>
+                            </center>                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Banaue Rice Terraces </h3>
+                            <figure>
+                            <img src="rice.jpg" alt="Banaue Rice Terraces" style="max-width:100%; height:auto;">
+                            <figcaption><i> Sight the UNESCO World Heritage Site mountain-carved by the Ifugao ancestors! Indeed, 
+                            an advanced and unique agricultural set-up. </i></figcaption>
+                            </figure>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Taal Volcano </h3>
+                            <figure>
+                            <img src="taal.jpg" alt="Taal" style="max-width:100%; height:auto;">
+                            <figcaption><i> Taal Volcano is a popular tourist spot in the Batangas province of Philippines. It features a stunning crater lake, surrounded by dense foliage and hiking trails leading to a viewing platform with breathtaking panoramic views. A unique aspect of this attraction is that it remains an active volcano, providing visitors with an opportunity to witness its natural phenomena. Adventurous travelers can rent horses or boats to explore the area, but appropriate footwear is essential for hiking. The caldera can also be crossed by boat. </i></figcaption>
+                            </figure>
+                            </center>                           
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <center>
+                            <h3> Rizal Park </h3>
+                            <figure>
+                            <img src="rizal.jpg" alt="Rizal Park" style="max-width:100%; height:auto;">
+                            <figcaption><i> Rizal Park is a sprawling complex of gardens, lawns and monuments in Manila, Philippines that honors Dr. Jose Rizal, the nation's national hero. The park features Chinese and Japanese Gardens as well as the National Museum of the Filipino People, among other attractions. It has been a popular tourist spot since its inception in 1912.
+                            </i></figcaption>
+                            </figure>
+                            </center>                           
+                        </td>
+                    </tr>
+                </table>
+        </section>
+        
+        <section id="visayas">
+            <div class="section-inner">
+                <h1> Tour-list Spots of Visayas </h1>
+                <table class="tourist-spots">
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Kalanggaman Island </h3>
+                            <figure>
+                            <img src="beak.jpg" alt="Kalanggaman Island" style="max-width:100%; height:auto;">
+                            <figcaption><i> Kalanggaman Island is a small island located in the Visayan Sea, in the municipality of Palompon, Leyte, Philippines. The island is known for its long, narrow sandbar that extends from the main island to a nearby islet. 
+                            The sandbar is a popular spot in Visayas for swimming and sunbathing, as the water is shallow and clear. The island is also known for its rich marine life, including a variety of fish, coral, and other sea creatures. 
+                            This makes it a popular destination for snorkeling and diving in Visayas. </i></figcaption>
+                            </figure>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Bohol's Chocolate Hills </h3>
+                            <figure>
+                            <img src="choco.jpg" alt="Bohol's Chocolate Hills" style="max-width:100%; height:auto;">
+                            <figcaption><i> Indulge the unique landscape of Bohol's Chocolate Hills! It turns brown as chocolate
+                            in dry summer, Be sure to check it out!</i></figcaption>
+                            </figure>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Boracay </h3>
+                            <figure>
+                            <img src="boracay.jpg" alt="Boracay" style="max-width:100%; height:auto;">
+                            <figcaption><i> Chill-ax to the mesmerizing beauty of the crystal clear white sand beaches! From
+                            island hopping to sea diving and many more. Partake different activities in this most visited tourist 
+                            spot. </i></figcaption>
+                            </figure>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Islas de Gigantes </h3>
+                            <figure>
+                            <img src="gigan.jpg" alt="Islas de Gigantes" style="max-width:100%; height:auto;">
+                            <figcaption><i> Located in the Negros Occidental, considered as the Taj Mahal of the Philippines,
+                            an architecture that was establish in the name of love. </i></figcaption>
+                            </figure>
+                            </center>                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> The Ruins </h3>
+                            <figure>
+                            <img src="ruins.jpg" alt="The Ruins" style="max-width:100%; height:auto;">
+                            <figcaption><i> Located in the Negros Occidental, considered as the Taj Mahal of the Philippines,
+                            an architecture that was establish in the name of love. </i></figcaption>
+                            </figure>
+                            </center>                           
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <section id="mindanao">
+            <div class="section-inner">
+                <h1> Tour-list Spot of Mindanao </h1>
+                <table class="tourist-spots">
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Philippine Eagle Center </h3>
+                            <figure>
+                            <img src="eagle.jpg" alt="Philippine Eagle Center" style="max-width:100%; height:auto;">
+                            <figcaption><i> The Philippine Eagle Center is a popular tourist destination in Davao City, where visitors can observe the critically endangered Philippine Eagle up close. 
+                            The center is a conservation facility dedicated to protecting and breeding Philippine eagles, known for their impressive size and unique appearance. </i></figcaption>
+                            </figure>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Aliwagwag Falls Eco Park </h3>
+                            <figure>
+                            <img src="wagwag.jpg" alt="Aliwagwag Falls Eco Park" style="max-width:100%; height:auto;">
+                            <figcaption><i> Aliwagwag Falls Eco Park, located in Cateel, Davao Oriental, is a stunning natural wonder and a must-visit tourist spot in Mindanao. 
+                            The eco-park boasts of the famous Aliwagwag Falls, considered one of the most beautiful waterfalls in the Philippines, with its unique cascading tiers and crystal-clear waters. </i></figcaption>
+                            </figure>
+                            </center>                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Maria Cristina Falls </h3>
+                            <figure>
+                            <img src="tina.jpg" alt="Maria Cristina Falls" style="max-width:100%; height:auto;">
+                            <figcaption><i> One of the most beautiful waterfalls as told in Philippine history books is the Maria Cristina Falls, also called the Twin Falls. 
+                            The 320-foot cascade is a sight to behold in Iligan, which is also known as the City of Majestic Waterfalls. 
+                            According to the legend, Maria and Cristina are beautiful twin sisters who fell in love with the same man. </i></figcaption>
+                            </figure>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <h3> Pink Beach </h3>
+                            <figure>
+                            <img src="pink.jpg" alt="Pink Beach" style="max-width:100%; height:auto;">
+                            <figcaption><i> Pink Beach, also known as Sta. Cruz Island is a unique and picturesque beach in Zamboanga City. 
+                            What sets this beach apart is its pinkish sand, which results from crushed red corals mixed with the white sand. </i></figcaption>
+                            </figure>
+                            </center>
+                        </td>
+                        <tr>
+                        <td>
+                            <center>
+                            <h3> Cloud9 </h3>
+                            <figure>
+                            <img src="c9.jpg" alt="Siargao Cloud9" style="max-width:100%; height:auto;">
+                            <figcaption><i> Cloud 9 is one of the best spots to learn and practice surfing in the Philippines. 
+                            This famous surfing destination is located on the laidback island of Siargao. 
+                            Local and international travelers love going back to this place to witness its white-sand beaches, blue-green waters, and scenic islands.
+                            </center>
+                        </td>
+                    </tr>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+    </main>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <h3> About Philippines </h3>
+                <ul>
+                    <li><a href="Home.html#history"> History </a></li>
+                    <li><a href="Home.html#geography"> Geography and Environment </a></li>
+                    <li><a href="Home.htmldemographics"> Demographics </a></li>
+                    <li><a href="Home.html#culture"> Culture </a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <h3> Tourist Attractions </h3>
+                <ul>
+                    <li><a href="Home.html#luzon"> Luzon </a></li>
+                    <li><a href="Home.html#visayas"> Visayas </a></li>
+                    <li><a href="Home.html#mindanao"> Mindanao </a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <h3><a href="vidgal.html"> Video Gallery </a></h3>
+            </div>
+            <div class="container">
+                <h3><a href="Login.html"> Log-in </a></h3>
+            </div>
+            <div class="container">
+                <h3><a href="Contact Us.html"> Contact Us </a></h3>
+            </div>
+        </div>
+        <center>
+        <p> Copyright @ 2022. All Rights Reserved. </p>
+        </center>
+    </footer>
+</body>
+</html>
